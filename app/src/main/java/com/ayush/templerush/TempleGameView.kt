@@ -305,7 +305,7 @@ class TempleGameView(context: Context) : View(context) {
         val w = width.toFloat(); val h = height.toFloat()
         p.color = Color.argb(if (mode == Mode.READY) 85 else 155, 4, 16, 12); c.drawRect(0f,0f,w,h,p)
         p.textAlign = Paint.Align.CENTER
-        p.typeface = android.graphics.Typeface.create("sans-serif-condensed", android.graphics.Typeface.BLACK)
+        p.typeface = android.graphics.Typeface.create("sans-serif-condensed", android.graphics.Typeface.BOLD)
         p.setShadowLayer(12f,0f,4f,Color.argb(120,0,0,0))
         p.color = gold; p.textSize = w*.15f; c.drawText("TEMPLE",w*.5f,h*.28f,p)
         p.color = ivory; p.textSize = w*.105f; c.drawText("RUSH",w*.5f,h*.375f,p)
